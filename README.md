@@ -21,4 +21,4 @@ Latest release available on the [release page](https://github.com/godbout/alfred
 
 # CREDITS
 
-The [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) team from which the music zsh script is shamelessly stolen from.
+The [Oh My Zsh](https://ohmyz.sh/) team from which the music zsh script is shamelessly stolen from.
