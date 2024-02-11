@@ -13,9 +13,9 @@ The built-in Alfred Mini Player only allows to choose between mute, volume to 50
 
 # MANDATORY SCREENSHOTS
 
-![volume-current](https://raw.githubusercontent.com/godbout/alfred-music-volume/master/resources/screenshots/volume-current.gif "volume-current")
+![volume-current](https://github.com/godbout/alfred-music-volume/assets/121373/0df096d5-aee2-4976-916f-8db995c4abac "volume-current")
 
-![volume](https://raw.githubusercontent.com/godbout/alfred-music-volume/master/resources/screenshots/volume.gif "volume")
+![volume](https://github.com/godbout/alfred-music-volume/assets/121373/868bb4a9-4be4-4b77-86fd-b839b3c235d1 "volume")
 
 # DOWNLOAD
 
