@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>mo.com.sleeplessmind.music-volume</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>53949C73-38EB-4AAA-8318-B271E01F6151</key>
@@ -32,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E2BDA769-4A7F-472E-8AF1-021AC3C1C90B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F677FB68-6549-41C3-BE30-F5BAD62889CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F677FB68-6549-41C3-BE30-F5BAD62889CA</key>
 		<array>
 			<dict>
@@ -49,13 +64,42 @@
 	<key>createdby</key>
 	<string>Guillaume Leclerc</string>
 	<key>description</key>
-	<string>Control the Music.app volume from Alfred</string>
+	<string>read and control the Music.app volume</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>Music Volume</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>E2BDA769-4A7F-472E-8AF1-021AC3C1C90B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -106,7 +150,7 @@
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>keyword</key>
-				<string>mv</string>
+				<string>{var:workflow_keyword}</string>
 				<key>subtext</key>
 				<string>up, down, 69, etc...</string>
 				<key>text</key>
@@ -126,6 +170,8 @@
 			<dict>
 				<key>argument</key>
 				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
 				<key>variables</key>
 				<dict>
 					<key>arg</key>
@@ -149,37 +195,68 @@
 		<key>53949C73-38EB-4AAA-8318-B271E01F6151</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>240</real>
 			<key>ypos</key>
-			<integer>280</integer>
+			<real>225</real>
 		</dict>
 		<key>68D72461-6AB9-440E-8046-FEB13EAC540A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>515</integer>
+			<real>335</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>195</real>
 		</dict>
 		<key>AE027D94-AF62-4D87-8351-5186EA80E9E6</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<real>520</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>195</real>
+		</dict>
+		<key>E2BDA769-4A7F-472E-8AF1-021AC3C1C90B</key>
+		<dict>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>30</real>
 		</dict>
 		<key>F677FB68-6549-41C3-BE30-F5BAD62889CA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>215</integer>
+			<real>30</real>
 			<key>ypos</key>
-			<integer>250</integer>
+			<real>195</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>mv</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Workflow Keyword</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>workflow_keyword</string>
+		</dict>
+	</array>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
-	<string>https://sleeplessmind.com.mo</string>
+	<string>https://github.com/godbout/alfred-music-volume</string>
 </dict>
 </plist>
