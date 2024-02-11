@@ -129,7 +129,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>zsh src/music.zsh $command $arg</string>
+				<string>zsh resources/scripts/music.zsh $command $arg</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
