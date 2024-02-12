@@ -15,8 +15,8 @@ case "$opt" in
             return 0
         fi
         case $1 in
-            up) new_volume=$((volume + 10 < 100 ? volume + 10 : 100)) ;;
-            down) new_volume=$((volume - 10 > 0 ? volume - 10 : 0)) ;;
+            up|u) new_volume=$((volume + 10 < 100 ? volume + 10 : 100)) ;;
+            down|d) new_volume=$((volume - 10 > 0 ? volume - 10 : 0)) ;;
             <0-100>) new_volume=$1 ;;
             *) echo "'$1' is not valid. Expected <0-100>, up or down."
                return 1 ;;
