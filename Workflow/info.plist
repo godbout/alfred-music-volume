@@ -112,7 +112,7 @@
 				<key>text</key>
 				<string>{query}</string>
 				<key>title</key>
-				<string>Music Control</string>
+				<string>Music Volume</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.notification</string>
@@ -152,9 +152,9 @@
 				<key>keyword</key>
 				<string>{var:workflow_keyword}</string>
 				<key>subtext</key>
-				<string>up, down, 69, etc...</string>
+				<string>up, down, 68, etc...</string>
 				<key>text</key>
-				<string>Change the Music.app volume</string>
+				<string>change the Music.app volume</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
