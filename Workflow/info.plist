@@ -154,7 +154,26 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>see https://github.com/godbout/alfred-music-volume</string>
+	<string>## Change the Music.app Volume with Alfred
+
+the built-in Alfred Mini Player only allows to choose between mute, volume to 50%, or max. the Workflow allows for more choices in case you have superhuman ears like me.
+
+### Change the Volume
+
+0 to 100. or `up`/`u` and `down`/`d` to change the Volume by increments or decrements of 10.
+
+![mv 68](resources/images/mv68.png)
+
+### Query the Volume
+
+you can query the current Volume of the Music.app by passing no parameter.
+
+![mv](resources/images/mv.png)
+
+
+## Need more info?
+
+welcome the [GitHub repository](https://github.com/godbout/alfred-music-volume)!</string>
 	<key>uidata</key>
 	<dict>
 		<key>68D72461-6AB9-440E-8046-FEB13EAC540A</key>
@@ -210,10 +229,8 @@
 			<string>workflow_keyword</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.2.0</string>
+	<string>2.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/godbout/alfred-music-volume</string>
 </dict>
