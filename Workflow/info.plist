@@ -8,19 +8,6 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
-		<key>53949C73-38EB-4AAA-8318-B271E01F6151</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>68D72461-6AB9-440E-8046-FEB13EAC540A</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>68D72461-6AB9-440E-8046-FEB13EAC540A</key>
 		<array>
 			<dict>
@@ -51,7 +38,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>53949C73-38EB-4AAA-8318-B271E01F6151</string>
+				<string>68D72461-6AB9-440E-8046-FEB13EAC540A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,7 +51,7 @@
 	<key>createdby</key>
 	<string>Guillaume Leclerc</string>
 	<key>description</key>
-	<string>read and control the Music.app volume</string>
+	<string>control the Music.app volume</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -129,9 +116,9 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>zsh resources/scripts/music.zsh $command $arg</string>
+				<string>zsh resources/scripts/music.zsh {query}</string>
 				<key>scriptargtype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
@@ -152,7 +139,7 @@
 				<key>keyword</key>
 				<string>{var:workflow_keyword}</string>
 				<key>subtext</key>
-				<string>up, down, 68, etc...</string>
+				<string>up/u, down/d, 68, etc...</string>
 				<key>text</key>
 				<string>change the Music.app volume</string>
 				<key>withspace</key>
@@ -165,51 +152,22 @@
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>arg</key>
-					<string>{query}</string>
-					<key>command</key>
-					<string>vol</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>53949C73-38EB-4AAA-8318-B271E01F6151</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string>see https://github.com/godbout/alfred-music-volume</string>
 	<key>uidata</key>
 	<dict>
-		<key>53949C73-38EB-4AAA-8318-B271E01F6151</key>
-		<dict>
-			<key>xpos</key>
-			<real>240</real>
-			<key>ypos</key>
-			<real>225</real>
-		</dict>
 		<key>68D72461-6AB9-440E-8046-FEB13EAC540A</key>
 		<dict>
 			<key>xpos</key>
-			<real>335</real>
+			<real>250</real>
 			<key>ypos</key>
 			<real>195</real>
 		</dict>
 		<key>AE027D94-AF62-4D87-8351-5186EA80E9E6</key>
 		<dict>
 			<key>xpos</key>
-			<real>520</real>
+			<real>445</real>
 			<key>ypos</key>
 			<real>195</real>
 		</dict>
